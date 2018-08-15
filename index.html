@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyCym01sK5oCpcp3ItUtr8OZW5v3-ikipLY",
+		    authDomain: "jeff-s-project.firebaseapp.com",
+		    databaseURL: "https://jeff-s-project.firebaseio.com",
+		    projectId: "jeff-s-project",
+		    storageBucket: "jeff-s-project.appspot.com",
+		    messagingSenderId: "468257253865"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+		<script src="bundle.js" defer> </script>
+		<link rel="stylesheet" href="styles.css" />
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	</head>
+	<body>
+		<div id="main_container">
+		<div id="login" class="vertical section">
+			<h1>Login</h1>
+			<form class="vertical">
+				<div class="form-input">
+					<label>Name: </label>
+					<input id="name" type="text" name="username">
+				</div>
+				<div class="form-input">
+					<label>Amount: $</label>
+					<input id="amount" type="text" name="password">
+				</div>
+				<button id="add">Add</button>
+			</form>
+		</div>
+		<div id="registration" class="vertical section">
+			<h1>Registration</h1>
+			<div class="form-input">
+				<label>Email: </label>
+				<input type="text" name="email"></div>
+			<div class="form-input">
+				<label>Username: </label>
+				<input type="password" name="username"></div>
+			<div class="form-input">
+				<label>Password: </label>
+				<input type="text" name="password"></div>
+			<div class="form-input">
+				<label>Confirm <br/>Password: </label>
+				<span><input type="password" name="confirm_password">
+			</div>
+		</div>
+		<div id="ledger"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyCym01sK5oCpcp3ItUtr8OZW5v3-ikipLY",
+		    authDomain: "jeff-s-project.firebaseapp.com",
+		    databaseURL: "https://jeff-s-project.firebaseio.com",
+		    projectId: "jeff-s-project",
+		    storageBucket: "jeff-s-project.appspot.com",
+		    messagingSenderId: "468257253865"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+		<script src="subject.js" defer> </script>
+		<link rel="stylesheet" href="styles.css" />
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	</head>
+	<body>
+		<div id="main_container">
+			<div id="forum" class="vertical section">
+				<h1>Algebra</h1>
+				<div class="form-input">
+					<label>User: </label>
+					<input id="user" type="text" name="user">
+				</div>
+				<div class="form-input">
+					<label>Title: </label>
+					<input id="title" type="text" name="title">
+				</div>
+				<div class="form-input">
+					<label>Content: </label>
+					<textarea id="content" style="height:300px; width:300px;"></textarea>
+				</div>
+				<button id="post">Post</button>
+			</div>
+		</div>
+		<div id="posts"></div>
+	</body>
+</html>
